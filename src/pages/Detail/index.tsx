@@ -110,7 +110,7 @@ function Detail() {
         <div className="teacher-container">
             <section className="header">
                 <Link to="/study" style={{border: 0, backgroundColor: 'transparent', marginLeft: 15}}>
-                    <img src={backIcon} style={{width: 30, marginTop: 10}} />
+                    <img src={backIcon} alt="back" style={{width: 30, marginTop: 10}} />
                 </Link>
                 <h1 >MeuProf</h1>
                 <img src={graduation} alt="myProf" style={{width: 40, marginRight: 15}} />
@@ -121,7 +121,7 @@ function Detail() {
                 .map((teacher) => {
                     return (
                         <div key={teacher.id}>
-                            <img src={teacher.avatar} className="profilePic" />
+                            <img alt="teacher" src={teacher.avatar} className="profilePic" />
                 
                             <div className="teacherItem" style={{marginTop: -45, overflow: 'visible', height: 80}}>
                                 <strong style={{fontSize:25}}>{teacher.name}</strong>
